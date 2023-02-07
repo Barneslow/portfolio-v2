@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--purple), #430496);
+  border-radius: 10px;
+  box-shadow: var(--darker-box-shadow);
+  padding: 2rem;
+  color: white;
+  min-width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 22px;
+}
+
+.button {
+  background-color: var(--off-white);
+}
+
+.button:hover {
+  transform: scale(1.02);
+  transition: all var(--speed);
+}

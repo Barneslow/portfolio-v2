@@ -1,0 +1,52 @@
+.container {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  right: auto;
+  z-index: 10;
+  background-color: var(--dark-purple);
+  padding: 15px 5px 0 5px;
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all var(--speed);
+  stroke: var(--purple);
+}
+
+.envelope:hover {
+  color: var(--light-green);
+}
+
+.facebook:hover {
+  color: #1774eb;
+}
+.github:hover {
+  color: var(--orange);
+}
+.linkedin:hover {
+  color: var(--blue);
+}

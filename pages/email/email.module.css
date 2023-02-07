@@ -1,0 +1,14 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.header {
+  font-family: var(--alternate-font);
+  font-size: 60px;
+  color: var(--dark-purple);
+}

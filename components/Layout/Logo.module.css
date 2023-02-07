@@ -1,0 +1,22 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.root:hover {
+  cursor: none;
+}
+
+.text {
+  position: absolute;
+  top: 10;
+  left: 10;
+}
+
+.text-style {
+  color: orange;
+  font-weight: bolder;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}

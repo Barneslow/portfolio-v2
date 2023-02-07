@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.heading {
+  font-size: clamp(1.6rem, 7vw, 3.4rem);
+  font-weight: 900;
+  font-family: var(--alternate-font);
+  color: var(--dark-purple);
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.video-container {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3 / 2;
+  max-width: 600px;
+  flex: 1;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay-icon {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  color: white;
+  stroke: black !important;
+  stroke-width: 2px !important;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  border-radius: 10px;
+  border: 2px solid;
+  box-shadow: var(--box-shadow);
+  font-size: clamp(1.3rem, 2vw, 2.2rem);
+  color: black;
+  height: 100%;
+}
+
+.link:hover {
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.link:first-child:hover {
+  color: var(--blue);
+}
+
+.link:nth-child(2):hover {
+  color: var(--orange);
+}
+
+.link:nth-child(3):hover {
+  color: var(--green);
+}
+
+.text-container {
+  flex: 1;
+}
+
+.sub-heading {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: var(--alternate-font);
+  font-weight: 500;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+  text-align: center;
+}
+
+.text {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-weight: 200;
+}
+
+.video-container:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  border: 2px solid;
+
+  .overlay-image {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .overlay-icon {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .link {
+    padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+  }
+}

@@ -1,0 +1,40 @@
+.nav {
+  background-color: var(--dark-purple);
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.navlist {
+  flex-direction: row;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navlist li {
+  color: white;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.navlist li a {
+  color: inherit;
+}
+
+.navlist li:hover {
+  cursor: pointer;
+  transition: var(--fast-speed);
+  color: var(--light-yellow);
+}
+
+@media (max-width: 500px) {
+  .nav {
+    padding: 0.5rem;
+  }
+  .navlist {
+    gap: 0.5rem;
+  }
+}

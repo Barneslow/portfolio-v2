@@ -1,0 +1,43 @@
+/* SOCIAL CSS */
+.social {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--dark-purple);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 25px;
+}
+
+.icon {
+  color: white;
+  font-size: clamp(1.5rem, 2.5vw, 2.7rem);
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.envelope:hover {
+  color: var(--light-green);
+}
+
+.facebook:hover {
+  color: #1774eb;
+}
+.github:hover {
+  color: var(--orange);
+}
+.linkedin:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 500px) {
+  .icon {
+    padding: 0.5rem;
+  }
+  .social {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+}

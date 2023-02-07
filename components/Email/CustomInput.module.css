@@ -1,0 +1,61 @@
+.form-input {
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+}
+
+.form-input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 1rem;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 3rem;
+}
+
+.form-input textarea {
+  width: 100%;
+  height: 250px;
+  border-radius: 40px;
+  font-size: 1rem;
+  border: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  resize: none;
+}
+
+.form-input input:focus {
+  outline: none !important;
+}
+
+.form-input textarea:focus {
+  outline: none !important;
+}
+
+.error input {
+  background-color: rgb(241, 189, 189);
+}
+
+.error textarea {
+  background-color: rgb(241, 189, 189);
+}
+
+.form-input svg {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 30px;
+  fill: #56565d;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+}
