@@ -38,6 +38,7 @@
 
 .button-span-text {
   font-size: clamp(10px, 1vw, 14px);
+  margin-top: 0.25rem;
 }
 
 @media (max-width: 600px) {

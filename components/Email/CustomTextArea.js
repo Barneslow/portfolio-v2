@@ -7,21 +7,26 @@ const CustomTextArea = ({
   ...props
 }) => {
   const hasError = touched[field.name] && errors[field.name];
+  const completed = touched[field.name] && !errors[field.name];
 
   return (
     <>
       <div
-        className={
-          hasError
-            ? `${styles.error} ${styles["form-input"]}`
-            : styles["form-input"]
-        }
+        style={{ border: !hasError && completed && "1px solid var(--blue)" }}
+        className={styles["form-input"]}
       >
         <textarea
           type="text"
           {...field}
           {...props}
-          placeholder={hasError && errors[field.name]}
+          placeholder="Write me a message :)"
+          style={{
+            border: completed
+              ? "1px solid var(--blue)"
+              : hasError
+              ? "1px solid red"
+              : "1px solid white",
+          }}
         />
       </div>
       {hasError && (

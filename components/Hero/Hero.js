@@ -6,12 +6,16 @@ import Image from "next/image";
 const Hero = () => {
   const container = {
     initial: {},
-    animate: { transition: { staggerChildren: 0.5, delayChildren: 0.5 } },
+    animate: { transition: { staggerChildren: 0.3, delayChildren: 0.75 } },
   };
 
   const child = {
-    initial: { opacity: 0, x: -50 },
-    animate: { opacity: 1, x: 0, transition: { duration: 1.25 } },
+    initial: { opacity: 0, x: -100 },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, type: "spring", bounce: 0.3 },
+    },
   };
 
   return (
@@ -33,11 +37,11 @@ const Hero = () => {
           Aspiring developer hoping to make a positive impact on the world
         </motion.h3>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className={styles["image-container"]}
         animate={{ scale: 1 }}
         initial={{ scale: 0 }}
-        transition={{ duration: 1.5, delay: 2.5, type: "spring", bounce: 0.6 }}
+        transition={{ duration: 1.5, delay: 1.5, type: "spring", bounce: 0.6 }}
       >
         <Image
           alt="dummy text"
@@ -48,7 +52,7 @@ const Hero = () => {
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

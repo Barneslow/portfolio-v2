@@ -17,7 +17,7 @@
 
 .navlist li {
   color: white;
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .navlist li a {
@@ -26,8 +26,8 @@
 
 .navlist li:hover {
   cursor: pointer;
-  transition: var(--fast-speed);
-  color: var(--light-yellow);
+  transition: all 200ms;
+  color: var(--blue);
 }
 
 @media (max-width: 500px) {

@@ -6,6 +6,17 @@
   box-shadow: var(--box-shadow);
   background-color: var(--light-green);
   overflow: hidden;
+  position: relative;
+}
+
+.icon {
+  font-size: 35px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 5;
+  stroke: black;
+  stroke-width: 10;
 }
 
 .image {
@@ -40,10 +51,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .text {
-  font-size: 1.4rem;
+  font-size: var(--subtitle-size);
 }
 
 .container:hover {

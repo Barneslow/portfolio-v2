@@ -1,10 +1,10 @@
 import Footer from "./Footer/Footer";
 import NavBar from "./Navigation/NavBar";
 
-const Layout = ({ children, setModalInView }) => {
+const Layout = ({ children, open }) => {
   return (
     <>
-      <NavBar setModalInView={setModalInView} />
+      <NavBar open={open} />
       {children}
       <Footer />
     </>

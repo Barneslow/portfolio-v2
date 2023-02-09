@@ -2,29 +2,32 @@
   {
     "id": "1",
     "name": "Barneslow Productivity",
-    "description": "Productivity website built using React, NodeJS, Express, MongoDB (Mern Stack)",
+    "description": "Productivity website which allows users to track study sessions, log daily tasks, break down productivity with help of visual graphs and more!",
     "text": "This was for a long time my capstone project before I started using NextJS. I implemented all the learnings and teachings from previous projects to create a fully fledged out productivity application. The front end was built using Create React App. Its features included a study session timer based upon the pomodoro timer. These sessions were logged to a MongoDB database and displayed on the homepage. Users could look at their session time, represented by a number of graphs/charts modelled from ApexCharts. Users could add notes, edit sessions and delete sessions. Users could create tasks with due dates and descriptions. These tasks were catalogued on an interactive calendar. Users' session times were logged onto a weekly leaderboard where prizes and coins would be distributed in the store. The store allowed users to buy emojis. Purchase implementation was based on a mock stripe account. Users could edit their profile, picture and goals. They could message other users. Full authentication was built from the ground up using JWT and reset features. Basic layout features were used from MUI and also built with vanilla CSS.It really was an amazing Fullstack project to build. The backend was hosted on Heroku and is currently down. Hoping to get it live again soon!",
     "url": "https://barneslow-productivity.netlify.app/",
     "image": "barneslowProductivity.png",
-    "video": "/testVideo.mov"
+    "video": "/testVideo.mov",
+    "build": ["React", "NodeJS", "Express", "MongoDB"]
   },
   {
     "id": "2",
     "name": "Barneslow Videos",
-    "description": "Mock Netflix application built using NextJS, YoutubeAPI, Hasura and MagicAuth",
+    "description": "Mock Netflix application that recommends videos based on a variety of categories and catalogues user favourites for rewatching.",
     "text": "This was my first NextJS application. I built this application under the tutoring of Andrei Neagoie, Anikita Kukarni from ZTM. It is a full stack ReactJS app which uses Youtube API to generate a collection of videos for the user to watch and find out some basic information on. The user login features implemented in this application was my first introduction to Passwordless Authentication. I found this feature to be one of the most impressive learnings during this build. A basic backend database was setup in order to handle users selected favourite videos. This was handled using Hasura and GraphQL. GraphQL was implemented in order to gain predictable results from the Youtube API query by asking specifically for what was wanted. Overall this application was a great way to learn all about the amazing features of NextJS such as ServerSide rendering, Static Props, optimisation techniques and most importantly having my entire fullstack codebase in one place!",
     "url": "https://barneslow-videos.vercel.app/",
     "image": "barneslowVideos.png",
-    "video": "barneslowVideos.mov"
+    "video": "barneslowVideos.mov",
+    "build": ["React", "NextJS", "Youtube", "Airtable"]
   },
   {
     "id": "3",
     "name": "Tourist Traveller App",
-    "description": "Travel App Built using React/Vite. Basic server created with NodeJS to interact with multiple API's.",
+    "description": "A Travel App that displays information on countries, recommendations of places to visit and links to flights and accomodation options.",
     "text": "This was a fun app I created in order to test out a Vite React build. I enjoyed interacting with multiple APIs in order to create an simple appliation that would give me recommendations things to do in different countries. An interactive map created with Leaflet and rest Countires and Google Places API to fetch place data.",
     "url": "https://endearing-dodol-1d7808.netlify.app/",
     "image": "traveltourist.png",
-    "video": "/testVideo.mov"
+    "video": "/testVideo.mov",
+    "build": ["React", "Leaflet", "Google"]
   },
   {
     "id": "4",
@@ -33,7 +36,8 @@
     "text": "dummy",
     "url": "lol",
     "image": "null",
-    "video": "/testVideo.mov"
+    "video": "/testVideo.mov",
+    "build": ["React", "NodeJS", "Express", "MongoDB"]
   },
   {
     "id": "5",
@@ -42,7 +46,8 @@
     "text": "dummy",
     "url": "https://barneslow-clothing.netlify.app/",
     "image": "barneslowClothing.png",
-    "video": "barneslowClothing.mov"
+    "video": "barneslowClothing.mov",
+    "build": ["React", "Firebase"]
   },
   {
     "id": "6",
@@ -51,6 +56,7 @@
     "text": "dummy",
     "url": "lol",
     "image": "null",
-    "video": "/testVideo.mov"
+    "video": "/testVideo.mov",
+    "build": ["Javascript"]
   }
 ]

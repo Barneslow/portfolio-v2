@@ -1,0 +1,16 @@
+.icon {
+  height: 50px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  background-color: var(--off-white);
+  border-radius: 10px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .icon {
+    height: 30px;
+    width: 60px;
+    padding: 5px;
+  }
+}

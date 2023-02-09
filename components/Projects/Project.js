@@ -1,9 +1,10 @@
 import styles from "./Project.module.scss";
-import image from "../../public/images/barneslowProductivity.png";
 import OutLineLink from "../ui/buttons/OutlineLink";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMedal } from "@fortawesome/free-solid-svg-icons";
 
 const Project = ({ project, index, inView }) => {
   const animation = useAnimation();
@@ -14,18 +15,36 @@ const Project = ({ project, index, inView }) => {
         opacity: 1,
         scale: 1,
         transition: {
-          duration: 0.75,
-          delay: index * 0.5,
+          duration: 0.5,
+          delay: index * 0.25,
         },
       });
     }
     if (!inView) {
       animation.start({ opacity: 0, scale: 0.5 });
     }
-  }, [inView]);
+  }, [inView, index, animation]);
+
+  let color = "var(--blue)";
+
+  if (index === 0) {
+    color = "var(--gold)";
+  }
+  if (index === 1) {
+    color = "var(--silver)";
+  }
+
+  if (index === 2) {
+    color = "var(--bronze)";
+  }
 
   return (
-    <motion.div className={`${styles.container}`} animate={animation}>
+    <motion.div className={styles.container} animate={animation}>
+      <FontAwesomeIcon
+        icon={faMedal}
+        className={styles.icon}
+        style={{ color }}
+      />
       <div className={styles.root}>
         <Image
           alt="dummy text"

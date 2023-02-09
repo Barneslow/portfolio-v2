@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: var(--text-size);
+  color: var(--secondary-text);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.icon {
+  height: 30px;
+  width: auto;
+}

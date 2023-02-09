@@ -1,27 +1,44 @@
 import styles from "./CustomInput.module.css";
-import EmailIcon from "@mui/icons-material/Email";
-import TitleIcon from "@mui/icons-material/Title";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CustomInput = ({
-  field,
-  onBlur, // { name, value, onChange, onBlur }
-  form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
-  ...props
-}) => {
+const CustomInput = ({ field, form: { touched, errors }, ...props }) => {
   const hasError = touched[field.name] && errors[field.name];
+  const completed = touched[field.name] && !errors[field.name];
 
-  const { email } = props;
+  const { icon } = props;
 
   return (
     <>
       <div
-        className={
-          hasError
-            ? `${styles.error} ${styles["form-input"]}`
-            : styles["form-input"]
-        }
+        animate={{
+          border: completed
+            ? "1px solid var(--blue)"
+            : hasError
+            ? "1px solid red"
+            : "1px solid white",
+        }}
+        transition={{ duration: 1 }}
+        style={{
+          border: completed
+            ? "1px solid var(--blue)"
+            : hasError
+            ? "1px solid red"
+            : "1px solid white",
+        }}
+        className={styles["form-input"]}
       >
-        <span>{email ? <EmailIcon /> : <TitleIcon />}</span>
+        <span>
+          <FontAwesomeIcon
+            icon={icon}
+            style={{
+              color: completed
+                ? "var(--blue)"
+                : hasError
+                ? "var(--red)"
+                : "var(--dark-purple)",
+            }}
+          />
+        </span>
         <input type="text" {...field} {...props} />
       </div>
       {hasError && (

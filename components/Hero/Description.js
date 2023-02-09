@@ -22,12 +22,15 @@ const Description = () => {
           Hi, I'm Darrach, nice to meet you!
         </h2>
         <p className={styles.text} style={options}>
-          Since beginning my journey as a freelance designer over 11 years ago,
-          I've done remote work for agencies, consulted for startups, and
-          collaborated with talented people to create digital products for both
-          business and consumer use. I'm quietly confident, naturally curious,
-          and perpetually working on improving my chops one design problem at a
-          time
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
         </p>
       </div>
     </section>
