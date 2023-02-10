@@ -37,22 +37,6 @@ const Hero = () => {
           Aspiring developer hoping to make a positive impact on the world
         </motion.h3>
       </motion.div>
-      {/* <motion.div
-        className={styles["image-container"]}
-        animate={{ scale: 1 }}
-        initial={{ scale: 0 }}
-        transition={{ duration: 1.5, delay: 1.5, type: "spring", bounce: 0.6 }}
-      >
-        <Image
-          alt="dummy text"
-          className={styles.image}
-          src={avatar.src}
-          width="0"
-          height="0"
-          sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
-        />
-      </motion.div> */}
     </section>
   );
 };

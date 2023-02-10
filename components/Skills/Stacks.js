@@ -26,7 +26,7 @@ const stack4 = [
   "mongodb",
   "sass",
 ];
-const stack5 = ["typescript", "graphQl", "python"];
+const stack5 = ["typescript", "graphql", "python"];
 
 const Stacks = () => {
   return (

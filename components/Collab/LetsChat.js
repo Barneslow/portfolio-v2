@@ -8,7 +8,7 @@ import styles from "./LetsChat.module.css";
 
 const LetsChat = ({ open }) => {
   const animation = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   const container = {
     initial: { y: 200 },
@@ -43,7 +43,7 @@ const LetsChat = ({ open }) => {
       <motion.div className={styles.block}>
         <p className={styles.text}>
           Interested in working together? We should queue up a time to chat.
-          I'll buy the coffee.
+          I&apos;ll buy the coffee.
         </p>
       </motion.div>
       <motion.div className={styles.block}>

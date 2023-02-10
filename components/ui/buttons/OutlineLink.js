@@ -1,11 +1,10 @@
 import Link from "next/link";
 import styles from "./Buttons.module.css";
 
-const OutLineLink = ({ children, icon, color, className, url }) => {
+const OutLineLink = ({ children, className, url }) => {
   return (
-    <Link className={`${styles["button-outline"]} ${className}`} href={url}>
+    <Link className={className || styles["button-outline"]} href={url}>
       {children}
-      <i className={`${icon} ${color}`}></i>
     </Link>
   );
 };

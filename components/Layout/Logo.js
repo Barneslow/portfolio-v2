@@ -7,7 +7,7 @@ const Logo = ({ color, stroke, size, onClick }) => {
       <LightbulbCircleIcon
         sx={{
           color: color,
-          fontSize: { xs: size ? 80 : 50, sm: 80 },
+          fontSize: { xs: size ? 50 : 50, sm: 50 },
           stroke: stroke,
           background: "white",
           borderRadius: "50%",

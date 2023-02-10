@@ -9,7 +9,7 @@ import { capitalizeFirstLetter } from "@/helpers/text";
 
 const TechStack = ({ stack, style }) => {
   const animation = useAnimation();
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   const container = {
     initial: {},

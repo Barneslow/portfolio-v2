@@ -55,7 +55,8 @@
 }
 
 .text {
-  font-size: var(--subtitle-size);
+  font-size: var(--text-size);
+  line-height: 1.6rem;
 }
 
 .container:hover {

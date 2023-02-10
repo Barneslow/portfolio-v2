@@ -6,7 +6,7 @@ import styles from "./AnimatedList.module.css";
 
 const AnimatedList = ({ list }) => {
   const animation = useAnimation();
-  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.75 });
 
   const container = {
     initial: {},

@@ -20,14 +20,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 20px;
   border: 3px solid var(--purple);
   color: var(--purple);
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   gap: 1rem;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   transition: all var(--fast-speed);
+  text-align: center;
 }
 
 .button-outline:hover {

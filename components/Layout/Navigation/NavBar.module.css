@@ -1,11 +1,13 @@
 .nav {
   background-color: var(--dark-purple);
   padding: 0.5rem 3rem 0.5rem 3rem;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  height: 65px;
+  display: flex;
+  width: 100%;
 }
 
 .navlist {
