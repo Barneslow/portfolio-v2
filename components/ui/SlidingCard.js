@@ -5,7 +5,7 @@ import styles from "./SlidingCard.module.css";
 
 const SlidingCard = ({ children, delay, color }) => {
   const animation = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.7 });
 
   useEffect(() => {
     if (inView) {
@@ -14,14 +14,13 @@ const SlidingCard = ({ children, delay, color }) => {
         y: 0,
         transition: {
           duration: 0.5,
-          delay,
         },
       });
     }
     if (!inView) {
       animation.start({ opacity: 0, y: 125 });
     }
-  }, [inView, animation, delay]);
+  }, [inView, animation]);
   return (
     <motion.div
       className={styles.card}

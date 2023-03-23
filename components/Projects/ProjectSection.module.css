@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding-block: 4rem;
-  background: var(--purple);
+  /* background: var(--purple);
   --mask: radial-gradient(44.72px at 50% 60px, #000 99%, #0000 101%)
       calc(50% - 40px) 0/80px 51% repeat-x,
     radial-gradient(44.72px at 50% -40px, #0000 99%, #000 101%) 50% 20px/80px
@@ -14,7 +14,7 @@
     radial-gradient(44.72px at 50% calc(100% + 40px), #0000 99%, #000 101%) 50%
       calc(100% - 20px) / 80px calc(51% - 20px) repeat-x;
   -webkit-mask: var(--mask);
-  mask: var(--mask);
+  mask: var(--mask); */
 }
 
 .heading {

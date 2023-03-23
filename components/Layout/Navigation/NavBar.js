@@ -19,8 +19,6 @@ const NavBar = ({ open }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(sticky);
-
   return (
     <nav
       style={{

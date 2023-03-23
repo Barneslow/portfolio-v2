@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 main,
 section,
@@ -6,7 +12,6 @@ div,
 a {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
 }
 
 a {
@@ -41,7 +46,7 @@ html {
   --purple: #6e07f3;
   --hover-purple: #470899;
   --dark-purple: #141c3a;
-  --orange: #f17f06;
+  --orange: #f98d19;
   --blue: #2664ad;
   --green: #36aa52;
   --red: #ea5757;
@@ -86,4 +91,16 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--purple);
+}
+
+.swiper-slide {
+  filter: blur(2px);
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-slide-active:hover {
+  filter: brightness(0.9);
 }
