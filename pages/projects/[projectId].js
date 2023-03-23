@@ -24,7 +24,7 @@ const ProjectPage = ({ data, projectData }) => {
   const router = useRouter();
 
   const [moreProjectsView, setMoreProjectsView] = useState(false);
-  const { name, description, url, image, video, text, build } = data;
+  const { name, description, url, image, video, text, github, build } = data;
 
   function moreProjectsHandler() {
     setMoreProjectsView((prev) => !prev);
@@ -118,7 +118,7 @@ const ProjectPage = ({ data, projectData }) => {
                   <IconLink
                     linkClass={styles.link}
                     icon={faGithub}
-                    url="https://github.com/Barneslow/tourist-traveller"
+                    url={github}
                     text="Source Code!"
                   />
                   <IconButton

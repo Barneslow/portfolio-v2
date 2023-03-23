@@ -1,5 +1,16 @@
 [
   {
+    "id": "0",
+    "name": "BMeditation",
+    "description": "An all-in-one app for meditation, journaling, and learning from the world's greatest minds for a more mindful life.",
+    "text": "As a first-time app developer, I chose to use React Native because of its cross-platform capabilities and ease of use. The app was published on the App Store and received positive feedback from users. To provide access to the app's data for other developers, I created an API page. This page allowed other developers to access the data used in the app to create their own applications. It was fulfilling to see the app I created being used as a resource for others. Overall, creating this app was a fun experience that allowed me to combine my passion for technology and mindfulness. It was a rewarding experience to see the app being used by others and knowing that it was helping people improve their mental well-being.",
+    "url": "https://bmeditation-api-website.vercel.app/",
+    "image": "bmeditation.png",
+    "video": "/testVideo.mov",
+    "build": ["React-Native"],
+    "github": "https://github.com/Barneslow/bmeditation"
+  },
+  {
     "id": "1",
     "name": "Barneslow Productivity",
     "description": "Productivity website which allows users to track study sessions, log daily tasks, break down productivity with help of visual graphs and more!",
@@ -7,7 +18,8 @@
     "url": "https://barneslow-productivity.netlify.app/",
     "image": "barneslowProductivity.png",
     "video": "/testVideo.mov",
-    "build": ["React", "NodeJS", "Express", "MongoDB"]
+    "build": ["React", "NodeJS", "Express", "MongoDB"],
+    "github": "https://github.com/Barneslow/barneslow-productivity"
   },
   {
     "id": "2",
@@ -17,17 +29,19 @@
     "url": "https://barneslow-videos.vercel.app/",
     "image": "barneslowVideos.png",
     "video": "barneslowVideos.mov",
-    "build": ["React", "NextJS", "Youtube", "Airtable"]
+    "build": ["React", "NextJS", "Youtube", "Airtable"],
+    "github": "https://github.com/Barneslow/barneslow-videos"
   },
   {
     "id": "3",
     "name": "Tourist Traveller App",
     "description": "A Travel App that displays information on countries, recommendations of places to visit and links to flights and accomodation options.",
     "text": "This was a fun app I created in order to test out a Vite React build. I enjoyed interacting with multiple APIs in order to create an simple appliation that would give me recommendations things to do in different countries. An interactive map created with Leaflet and rest Countires and Google Places API to fetch place data.",
-    "url": "https://endearing-dodol-1d7808.netlify.app/",
+    "url": "https://barneslow-travels.netlify.app/",
     "image": "traveltourist.png",
     "video": "/testVideo.mov",
-    "build": ["React", "Leaflet", "Google"]
+    "build": ["React", "Leaflet", "Google"],
+    "github": "https://github.com/Barneslow/tourist-traveller"
   },
   {
     "id": "4",
@@ -37,7 +51,8 @@
     "url": "lol",
     "image": "null",
     "video": "/testVideo.mov",
-    "build": ["React", "NodeJS", "Express", "MongoDB"]
+    "build": ["React", "NodeJS", "Express", "MongoDB"],
+    "github": "https://github.com/Barneslow/BarneslowBlog"
   },
   {
     "id": "5",
@@ -47,7 +62,8 @@
     "url": "https://barneslow-clothing.netlify.app/",
     "image": "barneslowClothing.png",
     "video": "barneslowClothing.mov",
-    "build": ["React", "Firebase"]
+    "build": ["React", "Firebase"],
+    "github": "https://github.com/Barneslow/barneslow-clothing"
   },
   {
     "id": "6",
@@ -57,6 +73,7 @@
     "url": "lol",
     "image": "null",
     "video": "/testVideo.mov",
-    "build": ["Javascript"]
+    "build": ["Javascript"],
+    "github": "https://github.com/Barneslow/forkifycourseJS"
   }
 ]
